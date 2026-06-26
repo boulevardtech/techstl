@@ -1,0 +1,53 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #f5f7fa;
+  background: #111827;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #111827, #1f2937);
+}
+* { box-sizing: border-box; }
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+.task-form {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+input, button {
+  font: inherit;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #374151;
+}
+button {
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+button.danger { background: #dc2626; }
+.task-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.task-list li.completed { opacity: 0.7; }
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
